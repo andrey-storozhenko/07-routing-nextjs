@@ -1,5 +1,5 @@
 
-import NotesClient from "../../Notes.client";
+import NotesClient from "./Notes.client";
 
 type Props = {
   params: Promise<{ slug: string[] }>;

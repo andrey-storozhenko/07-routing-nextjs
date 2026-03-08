@@ -1,15 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import SearchBox from "../../components/SearchBox/SearchBox";
+import SearchBox from "../../../../components/SearchBox/SearchBox";
 import css from "../../components/NotesPage/NotesPage.module.css";
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
-import {fetchNotes} from "../../lib/api";
+import {fetchNotes} from "../../../../lib/api";
 import { useDebouncedCallback } from 'use-debounce';
-import NoteList from "../../components/NoteList/NoteList";
-import Modal from "../../components/Modal/Modal";
-import NoteForm from "../../components/NoteForm/NoteForm";
-import Pagination from "../../components/Pagination/Pagination";
+import NoteList from "../../../../components/NoteList/NoteList";
+import Modal from "../../../../components/Modal/Modal";
+import NoteForm from "../../../../components/NoteForm/NoteForm";
+import Pagination from "../../../../components/Pagination/Pagination";
 
 type Props = {
   category?: string;
