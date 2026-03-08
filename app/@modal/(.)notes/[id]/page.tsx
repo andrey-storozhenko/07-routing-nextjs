@@ -17,7 +17,7 @@ const NotePreview = async ({ params }: Props) => {
   
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
-      <NotePreviewClient/>;
+      <NotePreviewClient/>
     </HydrationBoundary>
   );
 };
